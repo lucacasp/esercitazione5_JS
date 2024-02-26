@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #shop-name{
+    cursor: pointer;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+    }
+    #main{
+        display: flex;
+        margin: 0 20px;
+    }
+   .comment{
+    display: flex;
+    flex-direction: column;
+   }
+   .card{
+    width: 150px;
+    height: 500px;
+    background-color: white;
+   }
+   body{
+    background-color: white;
+   }
+   .mystyle{
+    text-decoration: none;
+    background-color: black;
+   }
+   .hidden{
+    display: none;
+   }
+</style>
+<body>
+
+    <header>
+        <h1 id="shop-name">Man Fragrances</h1>
+    </header>
+    <main id="main">
+        
+        <div id = btnBW>
+            <button onclick="nightFunction()">Modalità notte</button>
+            <!-- button per switch background ( es. 2 )-->
+        </div>
+        <div class="card">
+            <img src="/assets/1-28.png" alt="profumo uomo">
+            <h2>Chanel Blue</h2>
+            <a href="https://www.amazon.it/Chanel-Eau-Toilette-vaporizzatore-Bleu/dp/B0042KFHDY/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1CZDV6VIQDF4S&dib=eyJ2IjoiMSJ9.69yheB3u-kq3VFdCXHe4MTwWH39rHrkiK0t5pVWNZJIBSG5QXIZHCeW3Wh5k5fl32fusKM1JPNd6nSQALwDOczLUSWFNkZUytYGRu_tixG_pBMiAX4x0uobjUd1eQS08lRICcljOK_y9Bc40mukK3WIzbvSKrjQnB8ch76YAAtbGVpNIUxvz0_yPiuL43R06neGygsDAZC4c2RGwHvmhqDUkF4HN_SjzAfd_PPTzqKxh-zlVb4yWw1gzy0MIESuKf9aP5v6R7a1Jyl1RtcqXbit4dWSyUHW1LZ4Ef2Ivw3g.zbUXWGhQvBsw5BU7KmSfASnxCpVuGP7_1A2mZso0sk8&dib_tag=se&keywords=chanel+blu&qid=1708647401&sprefix=chanel+blu%2Caps%2C141&sr=8-2">Buy Now</a>
+            <h4>Description</h4>
+            <span>103.40€</span>
+            <div class="comment">
+                <label for="txt">Leave a Feeback: </label>
+                <textarea name="comment_area" id="txt" cols="15" rows="5"></textarea>
+                <button>Submit</button>
+            </div>
+            
+        </div>
+        <div class="card">
+            <img src="/assets/ubyh6zjv58fy5y4zkqrzhnetkhzr1ftdoz0lyjo6dpy8x6otmw9fb6tuma7r-w500-q85.png" alt="profumo uomo">
+            <h2>Dior Sauvage</h2>
+            <a href="https://www.amazon.it/Dior-Profumo-Cd-Sauvage-Edp/dp/B079TQS99Q/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=IF8D056G2TPH&dib=eyJ2IjoiMSJ9.RjefAGP0qXV71MeuYpzmAbjGlMrzYzS48yXOkQ0a_5aMOHS7P2sxdA_n-GC5UfefVrwDeJW27pSxW7rYliavsLPeQRKugCi_7w_V8Gu3Zh_4uurjW4jWtD6iYFTERPGhLVO52fPmpRitI29tVvsicNcHvEmFdROk_gzPiMrrHfuLeHuwg8zXaJmEeSNSlJ8h2bTv_R79nqbNZrSRYZqf5o6m4IrEmddSKpv-mBeUpUL2IcZH1wYJJseO_lcxPW4vA21UmH0UTlOObZUgXXbGDPeDz41XjYbtB-GHhnTrC3c.oh5NoVX5Aw34nKiMD9txcNBEYt2Ct8gcv-mRGfmVKnM&dib_tag=se&keywords=sauvage&qid=1708647456&sprefix=sauvage%2Caps%2C132&sr=8-6&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35">Buy Now</a>
+            <h4>Description</h4>
+            <span>143.11€</span>
+            <div class="comment">
+                <label for="txt">Leave a Feeback: </label>
+                <textarea name="comment_area" id="txt" cols="15" rows="5"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/Untitled-design-37-1.png" alt="profumo uomo">
+            <h2>Versace Eros</h2>
+            <a href="https://www.amazon.it/Versace-4168-Eros-di/dp/B015A6DSR0/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=31PDU3R30264W&dib=eyJ2IjoiMSJ9.sa7XYRUe4IG9Bgeqw_tOQkWBSMg-U8dzh6YVgmfdf2TKxWYW0ICTovaAqLlWPaM7XVrOZxA5knfc6YGlxSSeewmwuaXGtrPe_KwBSTxuzMa44ju9ztncXWk-XbCODP9m54H9NcEd8ZIvVyf2-pvToEzBYwvmI-5CLF-u_9JeRbk0hPcB84bdbvPhQgCCN-mpHYawQ1omF4LYBOaKs0TmhYzez670fdYhgM23Z6DIj9ZzAOIJ4KIlM28KniHKhp_4jUZRKwCDhn8xI_L6wcX1SkzFbxFEsF69P1IZv5a4rUo.wYVU8Ex2qInCOQ0b_spspkfZTuAzlaY-RKDkISiwrNQ&dib_tag=se&keywords=versace+eros&qid=1708647431&sprefix=versace+eors%2Caps%2C123&sr=8-1">Buy Now</a>
+            <h4>Description</h4>
+            <span>59.99€</span>
+            <div class="comment">
+                <label for="txt">Leave a Feeback: </label>
+                <textarea name="comment_area" id="txt" cols="15" rows="5"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/Valentino_Born_In_Rome.png" alt="profumo uomo">
+            <h2>Valentino</h2>
+            <a href="https://www.amazon.it/BORN-ROMA-UOMO-EDT-150ML/dp/B09L16RL5P/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=UQ4UJSC6TY3I&dib=eyJ2IjoiMSJ9.-Uw4r8TpK8wTngHEjd2PYHaz9mBQOvDeEPFXKREyqakBjTl9xWH_tbnZqueuxyKpO_Lh3QclEYVuiJZQswMlAQD1OMlLubinICs-ApQEmXd2nVQST4cTEHD4xw0l4jHjH-c3EnQM2JoxjftX5ayFo4rAvQAUIiKvYgiCR6Zvd2yoJm_LfhLkhKGNnFyGKC2Ht9dJw3-LLEagXZjzZHSPe6RIOyMpaO9LlgrGSU7noREmVPhbLX-UvqPsd2vJ1dZZVlBWW2vbzvx0DLUhGARMMUSA9ac54r9_y8Kf0Az6MOs.dIQbiHHDciaXrKQY4ezUDT8xBuAUVQ2QaocWZpgizN0&dib_tag=se&keywords=born+in+roma&qid=1708647495&sprefix=born+in+rom%2Caps%2C136&sr=8-4&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35">Buy Now</a>
+            <h4>Description</h4>
+            <span>109.00€</span>
+            <div class="comment">
+                <label for="txt">Leave a Feeback: </label>
+                <textarea name="comment_area" id="txt" cols="15" rows="5"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/w570.png" alt="profumo uomo">
+            <h2>Mont Blanc</h2>
+            <a href="https://www.amazon.it/Montblanc-Explorer-Edp-100-0-1/dp/B07K1BW1XY/ref=sr_1_5_pp?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3IPTJV5H5ZVC4&dib=eyJ2IjoiMSJ9.JNYAgtF2_HjH-DgZ6tTOCgbpXKQ__Zn-zr9PDU0_UyXXuB6rDJEof42XkER3ePSa7u6pBMTwyvigwY5Ry8_i3L84KTJfRmeHDIX9cJfidobJv9ryYi6ojW4wLlR-kOw1JYrQ4JP6_mSV1ilRTH29nhKMlOARRhAJ8qTabPOhsLcaQYi8SZRZoTT8za4dyEPU6DoN68o1o07WE3wPOEzo-IjBzYKEDCgQdtMznORO39LZWC8ananOuB2QOQ9OLDS-P3p7UO-tySi8pdLhC8gb6d_uq1JVy5sdIN-k7h_xM3U.11Sjpr71oadnn7qcNtetRykZfNwZOnUNWopBC6GxDpM&dib_tag=se&keywords=profumi&qid=1708646327&sprefix=profumi+%2Caps%2C119&sr=8-5">Buy Now</a>
+            <h4>Description</h4>
+            <span>57.90€</span>
+            <div class="comment">
+                <label for="txt">Leave a Feeback: </label>
+                <textarea name="comment_area" id="txt" cols="15" rows="5"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <button onclick="toggleImageVisibility()">Toggle Visibility</button>
+    <footer id = "foot01">
+        <h3> <a href="www.manfragrances.com">Man Fragrances.com</a></h3>
+        <h5>Via Napoli, Poggibonsi (SI)</h5>
+    </footer>
+        
+    <script src="s3p2-scaricabile.js"></script>
+</body>
+</html>
